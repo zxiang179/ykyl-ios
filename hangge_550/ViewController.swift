@@ -38,7 +38,8 @@ class ViewController: UIViewController, UIWebViewDelegate, UITextFieldDelegate {
         let frame = CGRect(x:0, y:20, width:UIScreen.main.bounds.width,height:UIScreen.main.bounds.height)
         webview = UIWebView(frame:frame)
         
-        webview.loadRequest(NSURLRequest(url: NSURL(string: "http://www.baidu.com")! as URL) as URLRequest)
+//         webview.loadRequest(NSURLRequest(url: NSURL(string: "http://www.baidu.com")! as URL) as URLRequest)
+         webview.loadRequest(NSURLRequest(url: NSURL(string: "http://192.168.1.132:8080/src/app/login/login-home.html#/user")! as URL) as URLRequest)
         self.view.addSubview(webview)
         
     }
